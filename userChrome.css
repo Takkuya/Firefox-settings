@@ -1,0 +1,42 @@
+/* --- Made by Trustadz --- */
+/* hide bookmark item icons */
+@namespace url('http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'); /* only needed once in userChrome.css */
+
+.bookmark-item {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+toolbarbutton.bookmark-item .toolbarbutton-text {
+	display: none !important;
+}
+
+toolbarbutton.bookmark-item .toolbarbutton-icon {
+	margin-left: 10px !important;
+}
+
+#PlacesToolbarItems
+	> .bookmark-item
+	> .toolbarbutton-icon[label]:not([label='']) {
+	margin-inline-end: 2px !important;
+}
+toolbarbutton.subviewbutton.subviewbutton-iconic .toolbarbutton-text {
+	display: -moz-box !important;
+}
+
+/* vertical bookmark separator */
+#PlacesToolbarItems > toolbarseparator {
+	margin-left: 10px !important;
+}
+
+/* change bookmark icons hover */
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+	&:not([disabled], [open]):hover {
+		background: transparent !important;
+		transform: translateY(-2px) !important;
+		transition: 0.2s !important;
+		/* cursor: pointer !important; */
+	}
+}
