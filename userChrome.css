@@ -40,3 +40,8 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 		/* cursor: pointer !important; */
 	}
 }
+
+/* increase tab font-size */
+.tab-label {
+	font-size: 12px !important;
+}
