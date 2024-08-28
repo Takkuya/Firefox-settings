@@ -45,3 +45,11 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 .tab-label {
 	font-size: 12px !important;
 }
+
+.menu-iconic-left {
+	padding-left: 8px !important;
+}
+
+.menu-right {
+	padding-right: 8px !important;
+}
