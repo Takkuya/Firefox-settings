@@ -53,3 +53,8 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 .menu-right {
 	padding-right: 8px !important;
 }
+
+/* hide native browser navigation bar. Doing this because i am using the Sidebery extension. A tree style tab extension basically */
+#TabsToolbar {
+	visibility: collapse;
+}
