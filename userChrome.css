@@ -58,3 +58,8 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 #TabsToolbar {
 	visibility: collapse;
 }
+
+/* hide Sidebery tab header */
+#sidebar-header {
+	display: none !important;
+}
